@@ -1,0 +1,6 @@
+{
+  "name": "TELENICK - NK 001",
+  "description": "Transmissor de tradução simultânea profissional NK 001 com processamento digital (DSP) para locadoras, integradores e empresas de sonorização.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
