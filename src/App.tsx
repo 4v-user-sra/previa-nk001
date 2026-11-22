@@ -23,10 +23,13 @@ export default function App() {
   }, []);
 
   useEffect(() => {
+    const mountedAt = Date.now();
+
     const handleMouseLeave = (event: MouseEvent) => {
       if (
         shouldTriggerExitIntent({
           clientY: event.clientY,
+          elapsedMs: Date.now() - mountedAt,
           hasClickedWhatsApp: hasClickedWhatsAppRef.current,
           hasShownExitModal: hasShownExitModalRef.current,
         })
