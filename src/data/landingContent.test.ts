@@ -29,6 +29,7 @@ test('buildWhatsAppUrl strips non-digit characters and rejects empty phones', ()
 
 test('all 6 sections match required item counts and non-empty copy', () => {
   assert.equal(HERO_CONTENT.brandHighlight, 'NK 001:');
+  assert.equal(HERO_CONTENT.brandLogo.src, '/assets/telenick-logo.png');
   assert.equal(HERO_CONTENT.ctaLabel, WHATSAPP_CONFIG.heroCtaLabel);
   assert.equal(AUDIENCES_CONTENT.items.length, 3);
   assert.equal(DSP_CONTENT.items.length, 3);

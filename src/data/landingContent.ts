@@ -64,6 +64,10 @@ export const HERO_CONTENT = {
     src: '/assets/hero-mixer-bg.jpg',
     alt: '',
   },
+  brandLogo: {
+    src: '/assets/telenick-logo.png',
+    alt: 'TELENICK - Equipamentos de Transmissão',
+  },
 } as const;
 
 export const AUDIENCES_CONTENT = {
