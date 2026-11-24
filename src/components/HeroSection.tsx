@@ -31,20 +31,20 @@ export function HeroSection({ onCtaClick }: HeroSectionProps) {
         </div>
       </div>
 
-      {/* Top-left prominent brand logo */}
-      <div className="relative z-30 flex justify-start px-4 pt-3 md:absolute md:top-5 md:left-8 lg:left-12 md:p-0">
-        <div className="inline-flex items-center justify-center rounded-[8px] border border-white/15 bg-[#0C0C0C]/90 px-3.5 py-2 shadow-[0_8px_24px_rgba(0,0,0,0.65)]">
+      {/* Centered brand logo above headline */}
+      <div className="relative z-20 flex justify-center px-4 pt-4 pb-1.5">
+        <div className="inline-flex items-center justify-center">
           <img
             src={HERO_CONTENT.brandLogo.src}
             alt={HERO_CONTENT.brandLogo.alt}
             referrerPolicy="no-referrer"
-            className="block h-auto w-[112px] sm:w-[132px] lg:w-[152px] select-none"
+            className="block h-auto w-[96px] sm:w-[112px] select-none"
           />
         </div>
       </div>
 
       {/* Main hero content */}
-      <div className="relative z-10 mx-auto max-w-[680px] px-4 pt-2 sm:pt-4 md:pt-5 pb-0 text-center">
+      <div className="relative z-10 mx-auto max-w-[680px] px-4 pt-1 sm:pt-1.5 pb-0 text-center">
         <motion.h1
           id="hero-heading"
           initial={{ opacity: 0, y: -14 }}
